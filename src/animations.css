@@ -1,0 +1,302 @@
+/*ANIMACION IZQUIERDA*/
+.line-left {
+  @apply fixed w-full;
+  margin-top: 5vh;
+}
+.line-left::after {
+  content: "";
+  @apply block absolute h-[1.5vh] w-3 top-[-50%] left-0 rounded-full;
+  background: linear-gradient(
+    to right,
+    #a1a1a1c6 0%,
+    #a5a5a5 25%,
+    #b1b1b1 50%,
+    #a5a5a5 95%,
+    #a1a1a1c6 100%
+  );
+  animation: run-left 5s cubic-bezier(0.4, 0.26, 0, 0.97) infinite forwards;
+  box-shadow: 0 0 20px 3px rgba(151, 151, 151, 0.66);
+  margin-left: -10vh;
+}
+.line-left {
+  margin-top: 5vh;
+}
+.line-left-1 {
+  margin-top: 15vh;
+}
+.line-left-2 {
+  margin-top: 25vh;
+}
+.line-left-3 {
+  margin-top: 35vh;
+}
+.line-left-4 {
+  margin-top: 45vh;
+}
+.line-left-5 {
+  margin-top: 55vh;
+}
+.line-left-6 {
+  margin-top: 65vh;
+}
+.line-left-7 {
+  margin-top: 75vh;
+}
+.line-left-8 {
+  margin-top: 85vh;
+}
+.line-left-9 {
+  margin-top: 95vh;
+}
+
+.line-left::after {
+  animation-delay: 0.9s;
+}
+.line-left-1::after {
+  animation-delay: 0.8s;
+}
+.line-left-2::after {
+  animation-delay: 0.7s;
+}
+.line-left-3::after {
+  animation-delay: 0.6s;
+}
+.line-left-4::after {
+  animation-delay: 0.5s;
+}
+.line-left-5::after {
+  animation-delay: 0.5s;
+}
+.line-left-6::after {
+  animation-delay: 0.6s;
+}
+.line-left-7::after {
+  animation-delay: 0.7s;
+}
+.line-left-8::after {
+  animation-delay: 0.8s;
+}
+.line-left-9::after {
+  animation-delay: 0.9s;
+}
+@keyframes run-left {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+/*ANIMACION DERECHA*/
+.line-right {
+  @apply fixed w-full rounded-full;
+  margin-top: 5vh;
+}
+.line-right::after {
+  content: "";
+  @apply block absolute h-[1.5vh] w-3 top-[-50%] right-0 rounded-full;
+  background: linear-gradient(
+    to right,
+    #a1a1a1c6 0%,
+    #a5a5a5 25%,
+    #b1b1b1 50%,
+    #a5a5a5 95%,
+    #a1a1a1c6 100%
+  );
+  animation: run-right 5s cubic-bezier(0.4, 0.26, 0, 0.97) infinite forwards;
+  box-shadow: 0 0 20px 3px rgba(151, 151, 151, 0.66);
+  margin-right: -10vh;
+}
+.line-right {
+  margin-top: 5vh;
+}
+.line-right-1 {
+  margin-top: 15vh;
+}
+.line-right-2 {
+  margin-top: 25vh;
+}
+.line-right-3 {
+  margin-top: 35vh;
+}
+.line-right-4 {
+  margin-top: 45vh;
+}
+.line-right-5 {
+  margin-top: 55vh;
+}
+.line-right-6 {
+  margin-top: 65vh;
+}
+.line-right-7 {
+  margin-top: 75vh;
+}
+.line-right-8 {
+  margin-top: 85vh;
+}
+.line-right-9 {
+  margin-top: 95vh;
+}
+
+.line-right::after {
+  animation-delay: 0.9s;
+}
+.line-right-1::after {
+  animation-delay: 0.8s;
+}
+.line-right-2::after {
+  animation-delay: 0.7s;
+}
+.line-right-3::after {
+  animation-delay: 0.6s;
+}
+.line-right-4::after {
+  animation-delay: 0.5s;
+}
+.line-right-5::after {
+  animation-delay: 0.5s;
+}
+.line-right-6::after {
+  animation-delay: 0.6s;
+}
+.line-right-7::after {
+  animation-delay: 0.7s;
+}
+.line-right-8::after {
+  animation-delay: 0.8s;
+}
+.line-right-9::after {
+  animation-delay: 0.9s;
+}
+@keyframes run-right {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 110%;
+  }
+}
+
+/*ANIMACION DISPAROS COHETE*/
+.line-shoot {
+  @apply fixed w-full rounded-full;
+}
+.line-shoot::after {
+  content: "";
+  @apply block absolute h-[1vh] w-2 top-[-50%] rounded-full;
+  background: linear-gradient(
+    to right,
+    #e9f26fc6 0%,
+    #f2c06fc6 0%,
+    #ff0303 100%
+  );
+  animation: run-shoot 1s linear infinite forwards;
+  animation-delay: 0.1s;
+  box-shadow: 0 0 4px 1px rgba(255, 145, 0, 0.66);
+}
+.line-shoot-1::after {
+  animation-delay: 0.2s;
+}
+.line-shoot-2::after {
+  animation-delay: 0.3s;
+}
+.line-shoot-3::after {
+  animation-delay: 0.4s;
+}
+.line-shoot,
+.line-shoot-1,
+.line-shoot-2,
+.line-shoot-3 {
+  visibility: hidden;
+  
+}
+
+.line-shoot.visible,
+.line-shoot-1.visible,
+.line-shoot-2.visible,
+.line-shoot-3.visible {
+  visibility: visible;
+}
+
+@keyframes run-shoot {
+  0% {
+    left: 3.8vw;
+  }
+  100% {
+    left: 100vw;
+  }
+}
+
+/*ANIMACION ESCUDO COHETE*/
+.circle-container {
+  position: fixed;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(
+    to right,
+    #6fe3f2c6 0%,
+    #95d9e6 5%,
+    #95d9e6 25%,
+    #ace5f2 50%,
+    #95d9e6 75%,
+    #95d9e6 95%,
+    #6fe3f2c6 100%
+  );
+  border-radius: 50%;
+  z-index: -2;
+  box-shadow: 0 0 15px 3px rgba(110, 240, 255, 0.66);
+}
+@keyframes move-updown-circle {
+  0% {
+    margin-top: 7.5vh;
+  }
+  10% {
+    margin-top: 17.5vh;
+    margin-left: 10vh;
+  }
+  20% {
+    margin-top: 27.5vh;
+    margin-left: 10vh;
+  }
+  30% {
+    margin-top: 47.5vh;
+    margin-left: 10vh;
+  }
+  40% {
+    margin-top: 57.5vh;
+    margin-left: 10vh;
+  }
+  50% {
+    margin-top: 67.5vh;
+    margin-left: 10vh;
+  }
+  60% {
+    margin-top: 27.5vh;
+    margin-left: 10vh;
+  }
+  70% {
+    margin-top: 77.5vh;
+    margin-left: 10vh;
+  }
+  80% {
+    margin-top: 87.5vh;
+    margin-left: 10vh;
+  }
+  90% {
+    margin-top: 77.5vh;
+    margin-left: 10vh;
+  }
+  100% {
+    margin-top: 7.5vh;
+    margin-left: -30vh;
+  }
+}
+.rotate-right {
+  transform: rotate(90deg);
+}
+
+.animate-updownc {
+  animation: move-updown-circle 20s ease-in-out infinite;
+}

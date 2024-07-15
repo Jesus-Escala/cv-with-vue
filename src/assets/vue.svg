@@ -1,0 +1,19 @@
+
+@keyframes run-left {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@keyframes run-right {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 110%;
+  }
+}
+0.56Z"></path></svg>
